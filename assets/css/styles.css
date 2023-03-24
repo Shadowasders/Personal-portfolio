@@ -1,0 +1,7 @@
+aside {
+    border: 1px black solid;
+    width: 33%;
+    border-right:  aquamarine 3px solid;
+    min-height: 33vh;
+    text-align: right;
+}
