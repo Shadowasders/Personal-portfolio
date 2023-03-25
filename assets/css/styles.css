@@ -1,7 +1,41 @@
+* {
+    box-sizing: border-box;
+}
 
-#about {
-    width: 33%;
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    background-color: lightblue;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li:visited {
+    text-decoration: none;
+}
+
+aside:nth-of-type(1) {
+    margin-top: 30px;
+}
+
+
+#about,
+#work,
+#contact {
+    width: 25%;
     border-right:  lightblue 5px solid;
     min-height: 33vh;
     text-align: right;
 }
+
