@@ -19,17 +19,18 @@ nav li {
 
 nav a {
     text-decoration: none;
+    color: white;
 }
 
-nav li:visited {
-    text-decoration: none;
+nav p {
+    color: white;
 }
 
 aside:nth-of-type(1) {
     margin-top: 30px;
 }
 
-
+/* setting the titles to the side of their respective asides */
 #about,
 #work,
 #contact {
@@ -39,3 +40,15 @@ aside:nth-of-type(1) {
     text-align: right;
 }
 
+.port {
+    display: flex;
+    /*flex-direction: column;*/
+}
+
+.sites{
+    background-color: black;
+}
+
+.sites p {
+    color: white;
+}
