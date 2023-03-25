@@ -40,9 +40,19 @@ aside:nth-of-type(1) {
     text-align: right;
 }
 
+.disc {
+    display: inline;
+    float: left;
+    margin-left: 30%;
+    top: 20px;
+    /* showing border for placement help */
+    border: 1px solid black;
+}
+
 .port {
-    display: flex;
-    /*flex-direction: column;*/
+    display: inline-flex;
+    margin-left: 30%;
+    flex-direction: column;
 }
 
 .sites{
