@@ -1,13 +1,16 @@
 * {
     box-sizing: border-box;
-}
+    /* padding: 0;
+    margin: 0; */
+    font-family: 'Oswald', sans-serif;
+ }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: static;
+    /* width: 100%; working to get it to cover entire space on screen, no white around it. */
     background-color: lightblue;
 }
 
@@ -15,6 +18,7 @@ nav li {
     list-style-type: none;
     display: inline;
     margin: 20px;
+    border-bottom: white 2px solid;
 }
 
 nav a {
@@ -23,11 +27,21 @@ nav a {
 }
 
 nav p {
+    background-color: gray;
     color: white;
+}
+
+aside {
+    font-size: 3em;
+    color: lightblue;
 }
 
 aside:nth-of-type(1) {
     margin-top: 30px;
+}
+
+footer {
+    text-align: center;
 }
 
 /* setting the titles to the side of their respective asides */
@@ -38,6 +52,11 @@ aside:nth-of-type(1) {
     border-right:  lightblue 5px solid;
     min-height: 33vh;
     text-align: right;
+}
+
+.photo {
+    max-height: 700px;
+    min-width: 100%;
 }
 
 .disc {
@@ -51,12 +70,14 @@ aside:nth-of-type(1) {
 
 .port {
     display: inline-flex;
+    float: left;
     margin-left: 30%;
     flex-direction: column;
 }
 
 .sites{
     background-color: black;
+    display: flex;
 }
 
 .sites p {
