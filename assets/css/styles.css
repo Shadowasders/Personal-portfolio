@@ -7,6 +7,17 @@
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin: 0; 
+    line-height: 1.5;
+ }
+
+ body {
+    width: 100vw;
+    height: 100vh;
+}
+
+ main {
+    display: flex;
+    flex-direction: column;
  }
 
 nav {
@@ -24,6 +35,9 @@ nav li {
     display: inline;
     margin: 10px;
     padding: 5px;
+} 
+
+nav li:hover {
     border-bottom: white 2px solid;
 }
 
@@ -50,57 +64,100 @@ aside {
     color: lightblue;
 }
 
-aside h2 {
-    margin-right: 10px;
-}
-
-aside:nth-of-type(1) {
-    margin-top: 30px;
-}
-
 footer {
+    color: lightblue;
+    width: 100vw;
+    background-color: var(--nav-bg);
+    padding: 20px;
     text-align: center;
 }
 
-/* setting the titles to the side of their respective asides */
-#about,
-#work,
-#contact {
-    width: 25%;
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    border-bottom: white 2px solid;
+}
+/* setting the titles to the side of their respective sections */
+aside {
     border-right:  lightblue 5px solid;
     /*min-height: 33vh;*/
     text-align: right;
+    flex: 0 0 33%;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: */
 }
 
 .photo {
     max-height: 550px;
     min-height: 400px;
     width: 100vw;
-    
 }
 
 .disc {
+    padding: 1% 0 1.5% 5%;
+    /* border: lightblue 5px solid; */
+}
+
+.disc p {
     display: inline;
-    float: left;
-    margin-left: 25%;
-    top: -77px;
-    left: 20px;
-    position: relative;
 }
 
 .port {
-    display: inline-flex;
-    float: left;
-    margin-left: 30%;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 66%;
+    padding: 0 5%;
+    justify-content: space-around;
 }
+
 
 .sites{
-    background-color: black;
+    background-image: url(./images/Screenshot\ 1.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
     border: 5px solid lightblue;
+    height: 100px;
+    flex: 1 0 33%;
 }
 
-.sites p {
-    color: white;
+#current-proj {
+    flex: 0 1 100%;
+    min-height: 300px;
+}
+
+.blurb {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    color: black;
+    background-color: lightblue; 
+    text-align: center;
+    height: 20%;
+    position: relative;
+    top: 40%;
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        flex-wrap: wrap;
+    }
+    
+    aside {
+        flex: 0 0 100%;
+        border-bottom: lightblue 5px solid;
+        border-right: none;
+        text-align: center;
+    }
 }
