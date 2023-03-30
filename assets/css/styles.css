@@ -1,5 +1,7 @@
+/*setting colors for easier changes */
 :root {
     --nav-bg: #221D1C;
+    --accent-clr: lightblue;
 }
 
 * {
@@ -11,6 +13,7 @@
     list-style-type: none;
  }
 
+ /* Setting the body to full height and width of webpage */
  body {
     width: 100vw;
     height: 100vh;
@@ -44,7 +47,7 @@ nav li:hover {
 
 nav h1 {
     font-size: 3rem;
-    background-color: lightblue;
+    background-color: var(--accent-clr);
     padding: 10px 12px 10px 12px;
     color: var(--nav-bg);
     margin-left: -20px;
@@ -59,14 +62,21 @@ nav p {
     background-color: gray;
     color: white;
 }
-
+/* setting the titles to the side of their respective sections */
 aside {
     font-size: 3em;
-    color: lightblue;
+    color: var(--accent-clr);
+    border-right:  var(--accent-clr) 5px solid;
+    text-align: right;
+    flex: 0 0 33%;
+}
+
+aside h2 {
+    padding-right: 2%;
 }
 
 footer {
-    color: lightblue;
+    color: var(--accent-clr);
     width: 100vw;
     background-color: var(--nav-bg);
     padding: 20px;
@@ -78,16 +88,12 @@ footer a {
     text-decoration: none;
     color: white;
 }
-
+/*Setting consistancy with hovering over links, all will show an underline to indicate it can be interacted with*/
 footer a:hover {
     border-bottom: white 2px solid;
 }
-/* setting the titles to the side of their respective sections */
-aside {
-    border-right:  lightblue 5px solid;
-    text-align: right;
-    flex: 0 0 33%;
-}
+
+
 
 .content {
     display: flex;
@@ -102,12 +108,12 @@ aside {
     object-fit: cover;
 }
 
-.disc {
-    padding: 1% 0 1.5% 5%;
+.profile-photo {
+    border-radius: 50%;
 }
 
-.disc p {
-    display: inline;
+.disc {
+    padding: 1% 0 1.5% 5%;
 }
 
 .port {
@@ -118,12 +124,17 @@ aside {
     justify-content: space-around;
 }
 
+#current-proj {
+    flex: 0 1 100%;
+    min-height: 300px;
+}
+
 .sites{
     background-image: url(./images/Screenshot\ 1.png);
     background-position: center;
     background-size: cover;
     display: flex;
-    border: 5px solid lightblue;
+    border: 5px solid var(--accent-clr);
     height: 150px;
     flex: 1 0 33%;
     margin: 0.5% 0.5%;
@@ -136,31 +147,58 @@ aside {
     text-align: center;
 }
 
-#current-proj {
-    flex: 0 1 100%;
-    min-height: 300px;
-}
-
 .blurb {
     color: black;
-    background-color: lightblue;
+    background-color: var(--accent-clr);
 }
 
+.icons {
+    padding: 0 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-icon {
+    max-height: 150px;
+    padding: 10% 0%;
+}
+
+/*Setting the right borders of the titles to be replaced with ones at the bottom for a vertical layout, as well as changing header color, and removing profile image on smaller screens*/
 @media screen and (max-width: 576px) {
-    .content {
-        display: block;
-    }
-    
     aside {
         flex: 0 0 100%;
-        border-bottom: lightblue 5px solid;
+        border-bottom: var(--accent-clr) 5px solid;
         border-right: none;
         text-align: center;
+    }
+
+    aside h2 {
+        padding: 0;
+    }
+
+    nav {
+        background-color: var(--accent-clr);
+    }
+
+    nav a {
+        color: var(--nav-bg);
+    }
+
+    .content {
+        display: block;
     }
 
     .disc {
         align-items: center;
     }
 
+    .icons {
+        padding: 0% 31%;
+    }
 
+    .profile-photo {
+        display: none;
+    }
 }
