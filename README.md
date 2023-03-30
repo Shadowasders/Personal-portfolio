@@ -15,7 +15,7 @@ If you want to use the format/color scheme, feel free. Besides that recommend th
 
 ## Credits
 
-I'd like to thank my instructor Anthony Maddatu for helping me with the specific flex-box syntax that gave me so much trouble!
+I'd like to thank my instructor [Anthony Maddatu](https://github.com/amaddatu) for helping me with the specific flex-box syntax that gave me so much trouble!
 
 ## License
 
