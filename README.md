@@ -1,4 +1,4 @@
-# <Personal Portfolio>
+# < Personal Portfolio >
 
 ## Description
 
@@ -6,12 +6,12 @@ Any Web Dev needs a place on the web to call home. A place to showcase their tal
 
 ## Usage
 
-If you want to use the format/color scheme, feel free. Besides that recommend this page to your friends who need a developer, or your companies Hiring department!
+If you want to use the format/color scheme, feel free. Besides that recommend this page to your friends who need a developer!
 
 ![](./assets/css/images/Personal-port%201.JPG)
 ![](./assets/css/images/personal-port%202.JPG)
 
-![Live site right here!](https://shadowasders.github.io/Personal-portfolio/)
+[Live site right here!](https://shadowasders.github.io/Personal-portfolio/)
 
 ## Credits
 
