@@ -127,11 +127,18 @@ footer a:hover {
 #current-proj {
     flex: 0 1 100%;
     min-height: 300px;
-    background-image: url(/assets/css/images/Capture.JPG);
+    background-image: url(./images/WeatherDash.JPG);
+}
+
+.site-bg1 {
+    background-image: url(./images/Capture.JPG);
+}
+
+.placeholder-bg {
+    background-image: url(./images/Screenshot\ 1.png);
 }
 
 .sites{
-    background-image: url(./images/Screenshot\ 1.png);
     background-position: center;
     background-size: cover;
     display: flex;
